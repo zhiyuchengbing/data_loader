@@ -1,0 +1,48 @@
+2025-12-21 16:43:12,345 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:43:12,376 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:43:12,377 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:43:12,377 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI71522\HCNetSDK
+2025-12-21 16:43:12,378 - VideoDownloader - ERROR - HCNetSDK文件夹不存在: C:\Users\admin\AppData\Local\Temp\_MEI71522\HCNetSDK
+2025-12-21 16:47:48,174 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:47:48,204 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:47:48,204 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:47:48,205 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI215082\HCNetSDK
+2025-12-21 16:47:48,207 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:47:48,207 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:47:49,032 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:47:49,032 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:47:49,041 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:47:49,200 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:48:16,811 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:48:37,153 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:48:37,181 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:48:37,181 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:48:37,182 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI210042\HCNetSDK
+2025-12-21 16:48:37,182 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:48:37,182 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:48:37,951 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:48:37,951 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:48:37,966 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:48:38,371 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:48:46,454 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:49:19,771 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:49:19,796 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:49:19,797 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:49:19,797 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI86042\HCNetSDK
+2025-12-21 16:49:19,797 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:49:19,797 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:49:20,675 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:49:20,676 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:49:20,684 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:49:21,072 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:49:32,901 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:50:19,254 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:50:19,280 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:50:19,280 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:50:19,281 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI209282\HCNetSDK
+2025-12-21 16:50:19,281 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:50:19,281 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:50:20,199 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:50:20,200 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:50:20,213 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:50:20,648 - VideoDownloader - INFO - 进入应用主循环

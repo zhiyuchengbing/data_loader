@@ -1104,3 +1104,4 @@ Exception: 登录设备失败，错误码：7
 2025-12-21 16:34:52,179 - VideoDownloader - INFO - 初始化界面
 2025-12-21 16:34:52,188 - VideoDownloader - INFO - 启动文件监控
 2025-12-21 16:34:52,598 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:43:27,878 - VideoDownloader - INFO - 程序退出，退出码: 0
