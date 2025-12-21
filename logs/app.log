@@ -1,0 +1,1096 @@
+2025-06-18 14:57:25,717 - VideoDownloader - INFO - 程序启动
+2025-06-18 14:57:25,718 - VideoDownloader - INFO - 创建目录: record
+2025-06-18 14:57:25,749 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 14:57:25,749 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 14:57:25,750 - VideoDownloader - INFO - 检查SDK路径: f:\柳州钢铁\环境配置\视频下载模块\HCNetSDK
+2025-06-18 14:57:25,750 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 14:57:25,750 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 14:57:27,890 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "f:\柳州钢铁\环境配置\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "f:\柳州钢铁\环境配置\视频下载模块\download_manager.py", line 20, in __init__
+    self.downloader = VideoDownloader()
+  File "f:\柳州钢铁\环境配置\视频下载模块\video_downloader.py", line 37, in __init__
+    self._login_device()
+  File "f:\柳州钢铁\环境配置\视频下载模块\video_downloader.py", line 115, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-06-18 14:57:30,321 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "f:\柳州钢铁\环境配置\视频下载模块\main.py", line 223, in main
+    window = MainWindow()
+  File "f:\柳州钢铁\环境配置\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "f:\柳州钢铁\环境配置\视频下载模块\download_manager.py", line 20, in __init__
+    self.downloader = VideoDownloader()
+  File "f:\柳州钢铁\环境配置\视频下载模块\video_downloader.py", line 37, in __init__
+    self._login_device()
+  File "f:\柳州钢铁\环境配置\视频下载模块\video_downloader.py", line 115, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-06-18 15:22:09,393 - VideoDownloader - INFO - 程序启动
+2025-06-18 15:22:09,646 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:22:09,646 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:22:09,653 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:22:09,653 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:22:09,653 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:22:09,657 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:22:09,657 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:22:09,657 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:22:09,658 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:22:09,658 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:22:09,674 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:22:09,674 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:22:12,998 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:22:13,000 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:22:13,000 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:22:13,000 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:22:13,730 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:22:13,734 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:22:15,197 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:22:15,221 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:22:15,920 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:22:15,921 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:22:15,982 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:22:16,449 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:23:58,488 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:23:59,875 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:24:00,891 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:24:27,408 - VideoDownloader - INFO - 程序启动
+2025-06-18 15:24:27,427 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:24:27,427 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:24:27,428 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:24:27,428 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:24:27,428 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:24:27,763 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:24:27,764 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:24:27,770 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:24:27,924 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:26:35,825 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:27:24,460 - VideoDownloader - INFO - 程序启动
+2025-06-18 15:27:24,480 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:27:24,481 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:27:24,481 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:27:24,481 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:27:24,481 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:27:25,189 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:27:25,189 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:27:25,197 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:27:25,353 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:33:47,204 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:34:57,739 - VideoDownloader - INFO - 程序启动
+2025-06-18 15:34:57,763 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:34:57,763 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:34:57,763 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:34:57,763 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:34:57,763 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:34:58,636 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:34:58,637 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:34:58,643 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:34:58,840 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:35:15,032 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:35:40,788 - VideoDownloader - INFO - 程序启动
+2025-06-18 15:35:40,788 - VideoDownloader - INFO - 创建目录: record
+2025-06-18 15:35:40,807 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:35:40,807 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:35:40,807 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:35:40,808 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:35:40,808 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:35:41,727 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:35:41,727 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:35:41,736 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:35:41,890 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 15:47:05,753 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-18 15:49:00,000 - VideoDownloader - INFO - 程序启动
+2025-06-18 15:49:00,001 - VideoDownloader - INFO - 创建目录: record
+2025-06-18 15:49:00,504 - VideoDownloader - INFO - 创建主窗口
+2025-06-18 15:49:00,505 - VideoDownloader - INFO - 初始化主窗口
+2025-06-18 15:49:00,505 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-18 15:49:00,505 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-18 15:49:00,505 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-18 15:49:03,876 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-18 15:49:03,876 - VideoDownloader - INFO - 初始化界面
+2025-06-18 15:49:03,943 - VideoDownloader - INFO - 启动文件监控
+2025-06-18 15:49:05,182 - VideoDownloader - INFO - 进入应用主循环
+2025-06-18 17:06:37,433 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-06-19 20:09:41,405 - VideoDownloader - INFO - 程序启动
+2025-06-19 20:09:41,625 - VideoDownloader - INFO - 创建主窗口
+2025-06-19 20:09:41,626 - VideoDownloader - INFO - 初始化主窗口
+2025-06-19 20:09:41,628 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-19 20:09:41,628 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-19 20:09:41,628 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-19 20:09:44,035 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-19 20:09:44,036 - VideoDownloader - INFO - 初始化界面
+2025-06-19 20:09:44,066 - VideoDownloader - INFO - 启动文件监控
+2025-06-19 20:09:44,258 - VideoDownloader - INFO - 进入应用主循环
+2025-06-23 15:36:50,133 - VideoDownloader - INFO - 程序启动
+2025-06-23 15:36:50,372 - VideoDownloader - INFO - 创建主窗口
+2025-06-23 15:36:50,381 - VideoDownloader - INFO - 初始化主窗口
+2025-06-23 15:36:50,385 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-06-23 15:36:50,385 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-06-23 15:36:50,386 - VideoDownloader - INFO - 初始化下载管理器
+2025-06-23 15:36:52,572 - VideoDownloader - INFO - 初始化文件监控器
+2025-06-23 15:36:52,575 - VideoDownloader - INFO - 初始化界面
+2025-06-23 15:36:52,640 - VideoDownloader - INFO - 启动文件监控
+2025-06-23 15:36:52,803 - VideoDownloader - INFO - 进入应用主循环
+2025-07-28 09:00:53,767 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-07-28 22:24:12,614 - VideoDownloader - INFO - 程序启动
+2025-07-28 22:24:12,828 - VideoDownloader - INFO - 创建主窗口
+2025-07-28 22:24:12,829 - VideoDownloader - INFO - 初始化主窗口
+2025-07-28 22:24:12,830 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-07-28 22:24:12,831 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-07-28 22:24:12,831 - VideoDownloader - INFO - 初始化下载管理器
+2025-07-28 22:24:16,993 - VideoDownloader - INFO - 初始化文件监控器
+2025-07-28 22:24:16,994 - VideoDownloader - INFO - 初始化界面
+2025-07-28 22:24:17,019 - VideoDownloader - INFO - 启动文件监控
+2025-07-28 22:24:17,222 - VideoDownloader - INFO - 进入应用主循环
+2025-08-27 21:46:45,773 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-08-27 21:47:09,813 - VideoDownloader - INFO - 程序启动
+2025-08-27 21:47:09,855 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 21:47:09,855 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 21:47:09,855 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 21:47:09,856 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 21:47:09,856 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 21:47:11,407 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 21:47:11,407 - VideoDownloader - INFO - 初始化界面
+2025-08-27 21:47:11,419 - VideoDownloader - ERROR - 初始化失败: 'MainWindow' object has no attribute 'on_download_failed'
+Traceback (most recent call last):
+  File "e:\积水识别项目\视频下载模块\main.py", line 81, in __init__
+    self.connect_signals()
+  File "e:\积水识别项目\视频下载模块\main.py", line 170, in connect_signals
+    self.download_manager.download_failed.connect(self.on_download_failed)
+AttributeError: 'MainWindow' object has no attribute 'on_download_failed'
+2025-08-27 21:47:14,501 - VideoDownloader - ERROR - 程序运行出错: 'MainWindow' object has no attribute 'on_download_failed'
+Traceback (most recent call last):
+  File "e:\积水识别项目\视频下载模块\main.py", line 309, in main
+    window = MainWindow()
+  File "e:\积水识别项目\视频下载模块\main.py", line 81, in __init__
+    self.connect_signals()
+  File "e:\积水识别项目\视频下载模块\main.py", line 170, in connect_signals
+    self.download_manager.download_failed.connect(self.on_download_failed)
+AttributeError: 'MainWindow' object has no attribute 'on_download_failed'
+2025-08-27 21:50:07,004 - VideoDownloader - INFO - 程序启动
+2025-08-27 21:50:07,047 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 21:50:07,048 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 21:50:07,049 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 21:50:07,050 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 21:50:07,050 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 21:50:08,943 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 21:50:08,945 - VideoDownloader - INFO - 初始化界面
+2025-08-27 21:50:08,956 - VideoDownloader - INFO - 启动文件监控
+2025-08-27 21:50:09,194 - VideoDownloader - INFO - 进入应用主循环
+2025-08-27 21:50:32,023 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-08-27 21:56:44,016 - VideoDownloader - INFO - 程序启动
+2025-08-27 21:56:44,078 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 21:56:44,079 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 21:56:44,079 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 21:56:44,080 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 21:56:44,080 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 21:56:45,484 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 21:56:45,484 - VideoDownloader - INFO - 初始化界面
+2025-08-27 21:56:45,503 - VideoDownloader - INFO - 启动文件监控
+2025-08-27 21:56:45,735 - VideoDownloader - INFO - 进入应用主循环
+2025-08-27 21:56:53,984 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-08-27 21:58:57,607 - VideoDownloader - INFO - 程序启动
+2025-08-27 21:58:57,627 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 21:58:57,628 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 21:58:57,628 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 21:58:57,629 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 21:58:57,629 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 21:58:58,263 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 21:58:58,263 - VideoDownloader - INFO - 初始化界面
+2025-08-27 21:58:58,272 - VideoDownloader - INFO - 启动文件监控
+2025-08-27 21:58:58,437 - VideoDownloader - INFO - 进入应用主循环
+2025-08-27 21:59:05,292 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-08-27 22:01:23,084 - VideoDownloader - INFO - 程序启动
+2025-08-27 22:01:23,106 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 22:01:23,106 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 22:01:23,107 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 22:01:23,107 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 22:01:23,107 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 22:01:23,747 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 22:01:23,748 - VideoDownloader - INFO - 初始化界面
+2025-08-27 22:01:23,758 - VideoDownloader - INFO - 启动文件监控
+2025-08-27 22:01:23,919 - VideoDownloader - INFO - 进入应用主循环
+2025-08-27 22:04:09,605 - VideoDownloader - INFO - 程序启动
+2025-08-27 22:04:09,635 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 22:04:09,635 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 22:04:09,636 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 22:04:09,636 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 22:04:09,636 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 22:04:10,338 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 22:04:10,338 - VideoDownloader - ERROR - 初始化失败: 'MainWindow' object has no attribute 'start_button'
+Traceback (most recent call last):
+  File "e:\积水识别项目\视频下载模块\main.py", line 77, in __init__
+    self.connect_signals()
+  File "e:\积水识别项目\视频下载模块\main.py", line 161, in connect_signals
+    self.start_button.clicked.connect(self.start_download)
+AttributeError: 'MainWindow' object has no attribute 'start_button'
+2025-08-27 22:04:56,464 - VideoDownloader - INFO - 程序启动
+2025-08-27 22:04:56,493 - VideoDownloader - INFO - 创建主窗口
+2025-08-27 22:04:56,493 - VideoDownloader - INFO - 初始化主窗口
+2025-08-27 22:04:56,494 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-08-27 22:04:56,494 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-08-27 22:04:56,494 - VideoDownloader - INFO - 初始化下载管理器
+2025-08-27 22:04:56,834 - VideoDownloader - INFO - 初始化文件监控器
+2025-08-27 22:04:56,835 - VideoDownloader - INFO - 初始化界面
+2025-08-27 22:04:56,844 - VideoDownloader - INFO - 启动文件监控
+2025-08-27 22:04:57,139 - VideoDownloader - INFO - 进入应用主循环
+2025-08-28 12:06:36,288 - VideoDownloader - INFO - 程序启动
+2025-08-28 12:06:36,338 - VideoDownloader - INFO - 创建主窗口
+2025-08-28 12:06:36,340 - VideoDownloader - INFO - 初始化主窗口
+2025-08-28 12:06:36,341 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI468202\HCNetSDK
+2025-08-28 12:06:36,341 - VideoDownloader - ERROR - HCNetSDK文件夹不存在: C:\Users\admin\AppData\Local\Temp\_MEI468202\HCNetSDK
+2025-09-01 13:28:55,548 - VideoDownloader - INFO - 程序启动
+2025-09-01 13:28:55,889 - VideoDownloader - INFO - 创建主窗口
+2025-09-01 13:28:55,892 - VideoDownloader - INFO - 初始化主窗口
+2025-09-01 13:28:55,894 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-01 13:28:55,895 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-01 13:28:55,896 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-01 13:28:56,775 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-01 13:28:56,778 - VideoDownloader - INFO - 初始化界面
+2025-09-01 13:28:56,861 - VideoDownloader - INFO - 启动文件监控
+2025-09-01 13:28:57,269 - VideoDownloader - INFO - 进入应用主循环
+2025-09-01 13:30:24,473 - VideoDownloader - INFO - 程序启动
+2025-09-01 13:30:24,575 - VideoDownloader - INFO - 创建主窗口
+2025-09-01 13:30:24,579 - VideoDownloader - INFO - 初始化主窗口
+2025-09-01 13:30:24,583 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-01 13:30:24,583 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-01 13:30:24,583 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-01 13:30:25,803 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-01 13:30:25,805 - VideoDownloader - INFO - 初始化界面
+2025-09-01 13:30:25,866 - VideoDownloader - INFO - 启动文件监控
+2025-09-01 13:30:26,269 - VideoDownloader - INFO - 进入应用主循环
+2025-09-01 13:39:20,312 - VideoDownloader - INFO - 程序启动
+2025-09-01 13:39:20,390 - VideoDownloader - INFO - 创建主窗口
+2025-09-01 13:39:20,390 - VideoDownloader - INFO - 初始化主窗口
+2025-09-01 13:39:20,391 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-01 13:39:20,391 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-01 13:39:20,391 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-01 13:39:21,492 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-01 13:39:21,493 - VideoDownloader - INFO - 初始化界面
+2025-09-01 13:39:21,508 - VideoDownloader - INFO - 启动文件监控
+2025-09-01 13:39:21,815 - VideoDownloader - INFO - 进入应用主循环
+2025-09-08 14:16:57,244 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-08 14:29:51,754 - VideoDownloader - INFO - 程序启动
+2025-09-08 14:29:52,078 - VideoDownloader - INFO - 创建主窗口
+2025-09-08 14:29:52,084 - VideoDownloader - INFO - 初始化主窗口
+2025-09-08 14:29:52,087 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-08 14:29:52,088 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-08 14:29:52,088 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-08 14:29:53,335 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-08 14:29:53,336 - VideoDownloader - INFO - 初始化界面
+2025-09-08 14:29:53,420 - VideoDownloader - INFO - 启动文件监控
+2025-09-08 14:29:53,764 - VideoDownloader - INFO - 进入应用主循环
+2025-09-08 14:30:54,740 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-08 14:31:01,672 - VideoDownloader - INFO - 程序启动
+2025-09-08 14:31:01,705 - VideoDownloader - INFO - 创建主窗口
+2025-09-08 14:31:01,706 - VideoDownloader - INFO - 初始化主窗口
+2025-09-08 14:31:01,708 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-08 14:31:01,708 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-08 14:31:01,708 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-08 14:31:02,518 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-08 14:31:02,518 - VideoDownloader - INFO - 初始化界面
+2025-09-08 14:31:02,529 - VideoDownloader - INFO - 启动文件监控
+2025-09-08 14:31:02,826 - VideoDownloader - INFO - 进入应用主循环
+2025-09-08 14:34:25,456 - VideoDownloader - INFO - 程序启动
+2025-09-08 14:34:25,557 - VideoDownloader - INFO - 创建主窗口
+2025-09-08 14:34:25,564 - VideoDownloader - INFO - 初始化主窗口
+2025-09-08 14:34:25,569 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-08 14:34:25,570 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-08 14:34:25,570 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-08 14:34:26,632 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-08 14:34:26,636 - VideoDownloader - INFO - 初始化界面
+2025-09-08 14:34:26,727 - VideoDownloader - INFO - 启动文件监控
+2025-09-08 14:34:27,206 - VideoDownloader - INFO - 进入应用主循环
+2025-09-15 13:50:10,621 - VideoDownloader - INFO - 程序启动
+2025-09-15 13:50:10,840 - VideoDownloader - INFO - 创建主窗口
+2025-09-15 13:50:10,842 - VideoDownloader - INFO - 初始化主窗口
+2025-09-15 13:50:10,844 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-15 13:50:10,844 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-15 13:50:10,845 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-15 13:50:12,166 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-15 13:50:12,167 - VideoDownloader - INFO - 初始化界面
+2025-09-15 13:50:12,220 - VideoDownloader - INFO - 启动文件监控
+2025-09-15 13:50:12,528 - VideoDownloader - INFO - 进入应用主循环
+2025-09-16 19:55:58,285 - VideoDownloader - INFO - 程序启动
+2025-09-16 19:55:58,528 - VideoDownloader - INFO - 创建主窗口
+2025-09-16 19:55:58,538 - VideoDownloader - INFO - 初始化主窗口
+2025-09-16 19:55:58,542 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-16 19:55:58,542 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-16 19:55:58,542 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-16 19:55:59,919 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-16 19:55:59,921 - VideoDownloader - INFO - 初始化界面
+2025-09-16 19:55:59,982 - VideoDownloader - INFO - 启动文件监控
+2025-09-16 19:56:00,247 - VideoDownloader - INFO - 进入应用主循环
+2025-09-17 17:31:23,633 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-18 12:03:25,345 - VideoDownloader - INFO - 程序启动
+2025-09-18 12:03:25,640 - VideoDownloader - INFO - 创建主窗口
+2025-09-18 12:03:25,642 - VideoDownloader - INFO - 初始化主窗口
+2025-09-18 12:03:25,644 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-18 12:03:25,644 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-18 12:03:25,644 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-18 12:03:27,114 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-18 12:03:27,115 - VideoDownloader - INFO - 初始化界面
+2025-09-18 12:03:27,160 - VideoDownloader - INFO - 启动文件监控
+2025-09-18 12:03:27,562 - VideoDownloader - INFO - 进入应用主循环
+2025-09-21 10:51:00,596 - VideoDownloader - INFO - 程序启动
+2025-09-21 10:51:00,964 - VideoDownloader - INFO - 创建主窗口
+2025-09-21 10:51:00,966 - VideoDownloader - INFO - 初始化主窗口
+2025-09-21 10:51:00,967 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-21 10:51:00,968 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-21 10:51:00,968 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-21 10:51:04,230 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-21 10:51:04,231 - VideoDownloader - INFO - 初始化界面
+2025-09-21 10:51:04,315 - VideoDownloader - INFO - 启动文件监控
+2025-09-21 10:51:04,709 - VideoDownloader - INFO - 进入应用主循环
+2025-09-21 21:45:53,523 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-21 21:50:22,992 - VideoDownloader - INFO - 程序启动
+2025-09-21 21:50:23,098 - VideoDownloader - INFO - 创建主窗口
+2025-09-21 21:50:23,109 - VideoDownloader - INFO - 初始化主窗口
+2025-09-21 21:50:23,114 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-21 21:50:23,114 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-21 21:50:23,114 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-21 21:50:24,339 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-21 21:50:24,340 - VideoDownloader - INFO - 初始化界面
+2025-09-21 21:50:24,409 - VideoDownloader - INFO - 启动文件监控
+2025-09-21 21:50:24,745 - VideoDownloader - INFO - 进入应用主循环
+2025-09-21 21:52:39,018 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-21 21:56:10,067 - VideoDownloader - INFO - 程序启动
+2025-09-21 21:56:10,086 - VideoDownloader - INFO - 创建主窗口
+2025-09-21 21:56:10,086 - VideoDownloader - INFO - 初始化主窗口
+2025-09-21 21:56:10,087 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-21 21:56:10,087 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-21 21:56:10,087 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-21 21:56:10,409 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-21 21:56:10,410 - VideoDownloader - INFO - 初始化界面
+2025-09-21 21:56:10,417 - VideoDownloader - INFO - 启动文件监控
+2025-09-21 21:56:10,700 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 13:42:39,183 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 13:55:07,434 - VideoDownloader - INFO - 程序启动
+2025-09-22 13:55:07,500 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 13:55:08,949 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 13:55:16,847 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 13:55:20,357 - VideoDownloader - INFO - 程序启动
+2025-09-22 13:55:20,387 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 13:55:21,971 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 13:55:33,144 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 14:03:50,418 - VideoDownloader - INFO - 程序启动
+2025-09-22 14:03:50,439 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 14:03:52,595 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 14:04:18,652 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 14:04:27,724 - VideoDownloader - INFO - 程序启动
+2025-09-22 14:04:27,746 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 14:04:27,747 - VideoDownloader - INFO - 初始化主窗口
+2025-09-22 14:04:27,747 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-22 14:04:27,747 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-22 14:04:27,747 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-22 14:04:28,200 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-22 14:04:28,200 - VideoDownloader - INFO - 初始化界面
+2025-09-22 14:04:28,210 - VideoDownloader - INFO - 启动文件监控
+2025-09-22 14:04:28,522 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 14:04:41,523 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 14:04:53,950 - VideoDownloader - INFO - 程序启动
+2025-09-22 14:04:53,970 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 14:04:55,143 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 14:05:24,029 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 14:06:45,716 - VideoDownloader - INFO - 程序启动
+2025-09-22 14:06:45,737 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 14:06:45,737 - VideoDownloader - INFO - 初始化主窗口
+2025-09-22 14:06:45,738 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-22 14:06:45,738 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-22 14:06:45,738 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-22 14:06:46,521 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-22 14:06:46,521 - VideoDownloader - INFO - 初始化界面
+2025-09-22 14:06:46,529 - VideoDownloader - INFO - 启动文件监控
+2025-09-22 14:06:46,841 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 14:09:37,385 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 14:13:31,435 - VideoDownloader - INFO - 程序启动
+2025-09-22 14:13:31,559 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 14:13:33,653 - VideoDownloader - INFO - 进入应用主循环
+2025-09-22 14:13:37,839 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-22 14:14:08,149 - VideoDownloader - INFO - 程序启动
+2025-09-22 14:14:08,190 - VideoDownloader - INFO - 创建主窗口
+2025-09-22 14:14:09,922 - VideoDownloader - INFO - 进入应用主循环
+2025-09-23 13:31:44,555 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-23 13:32:05,057 - VideoDownloader - INFO - 程序启动
+2025-09-23 13:32:05,334 - VideoDownloader - INFO - 创建主窗口
+2025-09-23 13:32:05,336 - VideoDownloader - INFO - 初始化主窗口
+2025-09-23 13:32:05,337 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-23 13:32:05,337 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-23 13:32:05,337 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-23 13:32:06,331 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-23 13:32:06,334 - VideoDownloader - INFO - 初始化界面
+2025-09-23 13:32:06,409 - VideoDownloader - INFO - 启动文件监控
+2025-09-23 13:32:06,782 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 16:13:47,425 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 16:59:03,725 - VideoDownloader - INFO - 程序启动
+2025-09-24 16:59:03,759 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 16:59:03,760 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 16:59:03,760 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 16:59:03,760 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 16:59:03,761 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 16:59:04,286 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 16:59:04,287 - VideoDownloader - INFO - 初始化界面
+2025-09-24 16:59:04,294 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 16:59:04,590 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 16:59:24,857 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 16:59:29,038 - VideoDownloader - INFO - 程序启动
+2025-09-24 16:59:29,058 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 16:59:29,059 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 16:59:29,059 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 16:59:29,059 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 16:59:29,059 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 16:59:29,673 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 16:59:29,673 - VideoDownloader - INFO - 初始化界面
+2025-09-24 16:59:29,681 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 16:59:29,981 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 16:59:38,064 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 17:00:12,457 - VideoDownloader - INFO - 程序启动
+2025-09-24 17:00:12,476 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 17:00:12,477 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 17:00:12,477 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 17:00:12,477 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 17:00:12,478 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 17:00:13,392 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 17:00:13,392 - VideoDownloader - INFO - 初始化界面
+2025-09-24 17:00:13,402 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 17:00:13,704 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 17:01:38,488 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 17:01:46,130 - VideoDownloader - INFO - 程序启动
+2025-09-24 17:01:46,151 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 17:01:46,152 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 17:01:46,152 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 17:01:46,152 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 17:01:46,152 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 17:01:47,308 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 17:01:47,309 - VideoDownloader - INFO - 初始化界面
+2025-09-24 17:01:47,315 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 17:01:47,622 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 17:02:17,464 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 17:02:31,821 - VideoDownloader - INFO - 程序启动
+2025-09-24 17:02:31,841 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 17:02:31,842 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 17:02:31,842 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 17:02:31,842 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 17:02:31,843 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 17:02:32,511 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 17:02:32,512 - VideoDownloader - INFO - 初始化界面
+2025-09-24 17:02:32,519 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 17:02:32,817 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 17:02:38,569 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 18:33:25,766 - VideoDownloader - INFO - 程序启动
+2025-09-24 18:33:26,041 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 18:33:26,050 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 18:33:26,053 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 18:33:26,067 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 18:33:26,067 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 18:33:27,679 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 18:33:27,681 - VideoDownloader - INFO - 初始化界面
+2025-09-24 18:33:27,733 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 18:33:28,012 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 18:33:36,568 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 18:34:24,424 - VideoDownloader - INFO - 程序启动
+2025-09-24 18:34:24,444 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 18:34:24,444 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 18:34:24,445 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 18:34:24,445 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 18:34:24,445 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 18:34:24,798 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 18:34:24,798 - VideoDownloader - INFO - 初始化界面
+2025-09-24 18:34:24,806 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 18:34:25,112 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 18:34:45,875 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 18:37:11,579 - VideoDownloader - INFO - 程序启动
+2025-09-24 18:37:11,599 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 18:37:11,600 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 18:37:11,600 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 18:37:11,601 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 18:37:11,601 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 18:37:12,471 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 18:37:12,471 - VideoDownloader - INFO - 初始化界面
+2025-09-24 18:37:12,479 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 18:37:12,631 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 18:37:17,588 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 18:37:50,060 - VideoDownloader - INFO - 程序启动
+2025-09-24 18:37:50,080 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 18:37:50,080 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 18:37:50,081 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 18:37:50,081 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 18:37:50,081 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 18:37:50,497 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 18:37:50,498 - VideoDownloader - INFO - 初始化界面
+2025-09-24 18:37:50,507 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 18:37:50,659 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 18:38:07,215 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 18:38:37,052 - VideoDownloader - INFO - 程序启动
+2025-09-24 18:38:37,069 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 18:38:37,069 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 18:38:37,070 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 18:38:37,070 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 18:38:37,070 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 18:38:37,915 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 18:38:37,916 - VideoDownloader - INFO - 初始化界面
+2025-09-24 18:38:37,923 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 18:38:38,254 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 18:38:54,073 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-24 18:45:07,968 - VideoDownloader - INFO - 程序启动
+2025-09-24 18:45:07,988 - VideoDownloader - INFO - 创建主窗口
+2025-09-24 18:45:07,988 - VideoDownloader - INFO - 初始化主窗口
+2025-09-24 18:45:07,989 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-24 18:45:07,989 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-24 18:45:07,989 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-24 18:45:09,093 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-24 18:45:09,094 - VideoDownloader - INFO - 初始化界面
+2025-09-24 18:45:09,103 - VideoDownloader - INFO - 启动文件监控
+2025-09-24 18:45:09,418 - VideoDownloader - INFO - 进入应用主循环
+2025-09-24 18:48:19,087 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 10:48:54,906 - VideoDownloader - INFO - 程序启动
+2025-09-25 10:48:54,942 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 10:48:54,942 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 10:48:54,942 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-25 10:48:54,942 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 10:48:54,943 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 10:48:56,435 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 10:48:56,435 - VideoDownloader - INFO - 初始化界面
+2025-09-25 10:48:56,443 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 10:48:56,747 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:39:50,835 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:41:06,763 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:41:06,784 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:41:06,784 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:41:06,785 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\demo0625\demo\data_download\HCNetSDK
+2025-09-25 20:41:06,785 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:41:06,785 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:41:08,034 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:41:08,034 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:41:08,042 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:41:08,301 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:41:18,867 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:43:46,552 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:43:46,573 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:43:46,574 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:43:46,574 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\demo0625\demo\data_download\HCNetSDK
+2025-09-25 20:43:46,575 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:43:46,575 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:43:47,645 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:43:47,646 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:43:47,654 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:43:47,979 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:43:53,457 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:45:04,290 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:45:04,311 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:45:04,311 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:45:04,312 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\demo0625\demo\data_download\HCNetSDK
+2025-09-25 20:45:04,312 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:45:04,312 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:45:04,798 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:45:04,799 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:45:04,809 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:45:05,139 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:45:19,747 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:47:44,398 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:47:44,418 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:47:44,419 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:47:44,419 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\demo0625\demo\data_download\HCNetSDK
+2025-09-25 20:47:44,420 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:47:44,420 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:47:45,192 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:47:45,193 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:47:45,202 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:47:45,511 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:47:52,263 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:48:55,887 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:48:55,911 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:48:55,911 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:48:55,912 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-25 20:48:55,912 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:48:55,912 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:48:56,887 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:48:56,888 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:48:56,895 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:48:57,189 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:49:59,466 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:50:32,527 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:50:32,547 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:50:32,547 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:50:32,548 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\demo0625\demo\data_download\HCNetSDK
+2025-09-25 20:50:32,548 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:50:32,548 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:50:33,137 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:50:33,138 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:50:33,147 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:50:33,461 - VideoDownloader - INFO - 进入应用主循环
+2025-09-25 20:50:45,875 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-25 20:51:16,032 - VideoDownloader - INFO - 程序启动
+2025-09-25 20:51:16,054 - VideoDownloader - INFO - 创建主窗口
+2025-09-25 20:51:16,054 - VideoDownloader - INFO - 初始化主窗口
+2025-09-25 20:51:16,055 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-25 20:51:16,055 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-25 20:51:16,055 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-25 20:51:17,345 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-25 20:51:17,345 - VideoDownloader - INFO - 初始化界面
+2025-09-25 20:51:17,354 - VideoDownloader - INFO - 启动文件监控
+2025-09-25 20:51:17,654 - VideoDownloader - INFO - 进入应用主循环
+2025-09-28 08:38:37,758 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-09-28 10:28:58,606 - VideoDownloader - INFO - 程序启动
+2025-09-28 10:28:58,843 - VideoDownloader - INFO - 创建主窗口
+2025-09-28 10:28:58,844 - VideoDownloader - INFO - 初始化主窗口
+2025-09-28 10:28:58,845 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-09-28 10:28:58,845 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-09-28 10:28:58,846 - VideoDownloader - INFO - 初始化下载管理器
+2025-09-28 10:29:00,200 - VideoDownloader - INFO - 初始化文件监控器
+2025-09-28 10:29:00,202 - VideoDownloader - INFO - 初始化界面
+2025-09-28 10:29:00,231 - VideoDownloader - INFO - 启动文件监控
+2025-09-28 10:29:00,587 - VideoDownloader - INFO - 进入应用主循环
+2025-10-08 11:59:23,875 - VideoDownloader - INFO - 程序启动
+2025-10-08 11:59:24,110 - VideoDownloader - INFO - 创建主窗口
+2025-10-08 11:59:24,111 - VideoDownloader - INFO - 初始化主窗口
+2025-10-08 11:59:24,111 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-10-08 11:59:24,112 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-10-08 11:59:24,112 - VideoDownloader - INFO - 初始化下载管理器
+2025-10-08 11:59:26,578 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-10-10 10:13:02,423 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-10-11 09:46:13,838 - VideoDownloader - INFO - 程序启动
+2025-10-11 09:46:14,075 - VideoDownloader - INFO - 创建主窗口
+2025-10-11 09:46:14,079 - VideoDownloader - INFO - 初始化主窗口
+2025-10-11 09:46:14,081 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-10-11 09:46:14,082 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-10-11 09:46:14,082 - VideoDownloader - INFO - 初始化下载管理器
+2025-10-11 09:46:15,658 - VideoDownloader - INFO - 初始化文件监控器
+2025-10-11 09:46:15,659 - VideoDownloader - INFO - 初始化界面
+2025-10-11 09:46:15,735 - VideoDownloader - INFO - 启动文件监控
+2025-10-11 09:46:16,023 - VideoDownloader - INFO - 进入应用主循环
+2025-10-11 09:51:52,836 - VideoDownloader - INFO - 程序启动
+2025-10-11 09:51:52,870 - VideoDownloader - INFO - 创建主窗口
+2025-10-11 09:51:52,870 - VideoDownloader - INFO - 初始化主窗口
+2025-10-11 09:51:52,871 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-10-11 09:51:52,871 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-10-11 09:51:52,872 - VideoDownloader - INFO - 初始化下载管理器
+2025-10-11 09:51:54,430 - VideoDownloader - INFO - 初始化文件监控器
+2025-10-11 09:51:54,431 - VideoDownloader - INFO - 初始化界面
+2025-10-11 09:51:54,455 - VideoDownloader - INFO - 启动文件监控
+2025-10-11 09:51:54,810 - VideoDownloader - INFO - 进入应用主循环
+2025-10-28 14:13:02,410 - VideoDownloader - INFO - 程序启动
+2025-10-28 14:13:02,682 - VideoDownloader - INFO - 创建主窗口
+2025-10-28 14:13:02,682 - VideoDownloader - INFO - 初始化主窗口
+2025-10-28 14:13:02,687 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-10-28 14:13:02,723 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-10-28 14:13:02,724 - VideoDownloader - INFO - 初始化下载管理器
+2025-10-28 14:13:12,188 - VideoDownloader - INFO - 初始化文件监控器
+2025-10-28 14:13:12,188 - VideoDownloader - INFO - 初始化界面
+2025-10-28 14:13:12,235 - VideoDownloader - INFO - 启动文件监控
+2025-10-28 14:13:12,657 - VideoDownloader - INFO - 进入应用主循环
+2025-11-21 16:45:17,991 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-11-24 10:30:22,668 - VideoDownloader - INFO - 程序启动
+2025-11-24 10:30:22,936 - VideoDownloader - INFO - 创建主窗口
+2025-11-24 10:30:22,937 - VideoDownloader - INFO - 初始化主窗口
+2025-11-24 10:30:22,939 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-11-24 10:30:22,950 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-11-24 10:30:22,950 - VideoDownloader - INFO - 初始化下载管理器
+2025-11-24 10:30:24,798 - VideoDownloader - INFO - 初始化文件监控器
+2025-11-24 10:30:24,798 - VideoDownloader - INFO - 初始化界面
+2025-11-24 10:30:24,821 - VideoDownloader - INFO - 启动文件监控
+2025-11-24 10:30:25,220 - VideoDownloader - INFO - 进入应用主循环
+2025-12-04 09:59:08,957 - VideoDownloader - INFO - 程序启动
+2025-12-04 09:59:09,094 - VideoDownloader - INFO - 创建主窗口
+2025-12-04 09:59:09,094 - VideoDownloader - INFO - 初始化主窗口
+2025-12-04 09:59:09,095 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-04 09:59:09,103 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-04 09:59:09,103 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-04 09:59:12,652 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-04 09:59:15,756 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-04 16:55:07,881 - VideoDownloader - INFO - 程序启动
+2025-12-04 16:55:08,153 - VideoDownloader - INFO - 创建主窗口
+2025-12-04 16:55:08,154 - VideoDownloader - INFO - 初始化主窗口
+2025-12-04 16:55:08,155 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-04 16:55:08,155 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-04 16:55:08,155 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-04 16:55:12,574 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-04 16:55:19,159 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-04 16:57:24,770 - VideoDownloader - INFO - 程序启动
+2025-12-04 16:57:24,790 - VideoDownloader - INFO - 创建主窗口
+2025-12-04 16:57:24,791 - VideoDownloader - INFO - 初始化主窗口
+2025-12-04 16:57:24,791 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-04 16:57:24,791 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-04 16:57:24,791 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-04 16:57:26,955 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-04 16:57:28,883 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-06 14:00:37,135 - VideoDownloader - INFO - 程序启动
+2025-12-06 14:00:38,433 - VideoDownloader - INFO - 创建主窗口
+2025-12-06 14:00:38,434 - VideoDownloader - INFO - 初始化主窗口
+2025-12-06 14:00:38,436 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-06 14:00:38,436 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-06 14:00:38,436 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-06 14:01:31,364 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-06 14:01:37,999 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-07 13:29:25,064 - VideoDownloader - INFO - 程序启动
+2025-12-07 13:29:25,351 - VideoDownloader - INFO - 创建主窗口
+2025-12-07 13:29:25,355 - VideoDownloader - INFO - 初始化主窗口
+2025-12-07 13:29:25,358 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-07 13:29:25,358 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-07 13:29:25,358 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-07 13:29:28,759 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-07 13:30:19,575 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-07 20:47:21,557 - VideoDownloader - INFO - 程序启动
+2025-12-07 20:47:21,869 - VideoDownloader - INFO - 创建主窗口
+2025-12-07 20:47:21,878 - VideoDownloader - INFO - 初始化主窗口
+2025-12-07 20:47:21,884 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-07 20:47:21,884 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-07 20:47:21,884 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-07 20:47:21,884 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-07 20:47:21,884 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-07 20:47:25,212 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-07 20:47:28,773 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-07 20:47:30,349 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 08:40:27,545 - VideoDownloader - INFO - 程序启动
+2025-12-08 08:40:27,804 - VideoDownloader - INFO - 创建主窗口
+2025-12-08 08:40:27,813 - VideoDownloader - INFO - 初始化主窗口
+2025-12-08 08:40:27,819 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-08 08:40:27,820 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-08 08:40:27,820 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-08 08:40:30,750 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 08:40:37,157 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 11:05:09,220 - VideoDownloader - INFO - 程序启动
+2025-12-08 11:05:09,403 - VideoDownloader - INFO - 创建主窗口
+2025-12-08 11:05:09,404 - VideoDownloader - INFO - 初始化主窗口
+2025-12-08 11:05:09,404 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-08 11:05:09,404 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-08 11:05:09,404 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-08 11:05:11,465 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 11:05:14,686 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 13:05:46,820 - VideoDownloader - INFO - 程序启动
+2025-12-08 13:05:46,839 - VideoDownloader - INFO - 创建主窗口
+2025-12-08 13:05:46,839 - VideoDownloader - INFO - 初始化主窗口
+2025-12-08 13:05:46,840 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-08 13:05:46,840 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-08 13:05:46,840 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-08 13:05:48,901 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 13:05:51,554 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 13:06:10,595 - VideoDownloader - INFO - 程序启动
+2025-12-08 13:06:10,616 - VideoDownloader - INFO - 创建主窗口
+2025-12-08 13:06:10,617 - VideoDownloader - INFO - 初始化主窗口
+2025-12-08 13:06:10,618 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-08 13:06:10,618 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-08 13:06:10,618 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-08 13:06:12,724 - VideoDownloader - ERROR - 初始化失败: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 13:06:14,949 - VideoDownloader - ERROR - 程序运行出错: 登录设备失败，错误码：7
+Traceback (most recent call last):
+  File "E:\积水识别项目\视频下载模块\main.py", line 316, in main
+    window = MainWindow()
+  File "E:\积水识别项目\视频下载模块\main.py", line 69, in __init__
+    self.download_manager = DownloadManager()
+  File "E:\积水识别项目\视频下载模块\download_manager.py", line 24, in __init__
+    self.downloader = VideoDownloader()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 38, in __init__
+    self._login_device()
+  File "E:\积水识别项目\视频下载模块\video_downloader.py", line 116, in _login_device
+    raise Exception(f"登录设备失败，错误码：{error_code}")
+Exception: 登录设备失败，错误码：7
+2025-12-08 14:11:03,383 - VideoDownloader - INFO - 程序启动
+2025-12-08 14:11:03,426 - VideoDownloader - INFO - 创建主窗口
+2025-12-08 14:11:03,427 - VideoDownloader - INFO - 初始化主窗口
+2025-12-08 14:11:03,428 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-08 14:11:03,429 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-08 14:11:03,429 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-08 14:11:07,060 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-08 14:11:07,060 - VideoDownloader - INFO - 初始化界面
+2025-12-08 14:11:07,071 - VideoDownloader - INFO - 启动文件监控
+2025-12-08 14:11:07,494 - VideoDownloader - INFO - 进入应用主循环
+2025-12-09 09:39:32,723 - VideoDownloader - INFO - 程序启动
+2025-12-09 09:39:33,647 - VideoDownloader - INFO - 创建主窗口
+2025-12-09 09:39:33,656 - VideoDownloader - INFO - 初始化主窗口
+2025-12-09 09:39:33,660 - VideoDownloader - INFO - 检查SDK路径: E:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-09 09:39:33,660 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-09 09:39:33,660 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-09 09:39:41,856 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-09 09:39:41,858 - VideoDownloader - INFO - 初始化界面
+2025-12-09 09:39:41,910 - VideoDownloader - INFO - 启动文件监控
+2025-12-09 09:39:42,231 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:15:27,521 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:15:27,543 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:15:27,544 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:15:27,545 - VideoDownloader - INFO - 检查SDK路径: e:\积水识别项目\视频下载模块\HCNetSDK
+2025-12-21 16:15:27,553 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:15:27,553 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:15:28,383 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:15:28,384 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:15:28,393 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:15:28,781 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:15:31,743 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:18:34,579 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:18:34,599 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:18:34,600 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:18:34,601 - VideoDownloader - INFO - 检查SDK路径: e:\demo\data_loader\HCNetSDK
+2025-12-21 16:18:34,601 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:18:34,602 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:18:36,694 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:18:36,694 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:18:36,701 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:18:37,118 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:18:48,062 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:19:36,061 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:19:36,081 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:19:36,082 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:19:36,082 - VideoDownloader - INFO - 检查SDK路径: e:\demo\data_loader\HCNetSDK
+2025-12-21 16:19:36,083 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:19:36,083 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:19:37,227 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:19:37,227 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:19:37,235 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:19:37,624 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:19:45,808 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:22:18,235 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:22:18,255 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:22:18,256 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:22:18,256 - VideoDownloader - INFO - 检查SDK路径: e:\demo\data_loader\HCNetSDK
+2025-12-21 16:22:18,256 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:22:18,256 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:22:18,917 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:22:18,917 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:22:18,925 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:22:19,333 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 16:22:33,693 - VideoDownloader - INFO - 程序退出，退出码: 0
