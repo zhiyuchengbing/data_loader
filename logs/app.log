@@ -1094,3 +1094,13 @@ Exception: 登录设备失败，错误码：7
 2025-12-21 16:22:18,925 - VideoDownloader - INFO - 启动文件监控
 2025-12-21 16:22:19,333 - VideoDownloader - INFO - 进入应用主循环
 2025-12-21 16:22:33,693 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 16:34:51,913 - VideoDownloader - INFO - 程序启动
+2025-12-21 16:34:51,932 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 16:34:51,933 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 16:34:51,934 - VideoDownloader - INFO - 检查SDK路径: e:\demo\data_loader\HCNetSDK
+2025-12-21 16:34:51,935 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 16:34:51,935 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 16:34:52,178 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 16:34:52,179 - VideoDownloader - INFO - 初始化界面
+2025-12-21 16:34:52,188 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 16:34:52,598 - VideoDownloader - INFO - 进入应用主循环
