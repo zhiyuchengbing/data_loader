@@ -46,3 +46,36 @@
 2025-12-21 16:50:20,200 - VideoDownloader - INFO - 初始化界面
 2025-12-21 16:50:20,213 - VideoDownloader - INFO - 启动文件监控
 2025-12-21 16:50:20,648 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 17:12:06,416 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 17:36:12,376 - VideoDownloader - INFO - 程序启动
+2025-12-21 17:36:12,404 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 17:36:12,404 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 17:36:12,404 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI188322\HCNetSDK
+2025-12-21 17:36:12,405 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 17:36:12,405 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 17:36:13,777 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 17:36:13,777 - VideoDownloader - INFO - 初始化界面
+2025-12-21 17:36:13,787 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 17:36:14,192 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 18:14:04,827 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 18:25:01,377 - VideoDownloader - INFO - 程序启动
+2025-12-21 18:25:01,407 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 18:25:01,407 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 18:25:01,408 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI235362\HCNetSDK
+2025-12-21 18:25:01,408 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 18:25:01,408 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 18:25:02,011 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 18:25:02,011 - VideoDownloader - INFO - 初始化界面
+2025-12-21 18:25:02,022 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 18:25:02,443 - VideoDownloader - INFO - 进入应用主循环
+2025-12-21 18:25:29,700 - VideoDownloader - INFO - 程序退出，退出码: 0
+2025-12-21 18:46:08,394 - VideoDownloader - INFO - 程序启动
+2025-12-21 18:46:08,425 - VideoDownloader - INFO - 创建主窗口
+2025-12-21 18:46:08,425 - VideoDownloader - INFO - 初始化主窗口
+2025-12-21 18:46:08,426 - VideoDownloader - INFO - 检查SDK路径: C:\Users\admin\AppData\Local\Temp\_MEI55802\HCNetSDK
+2025-12-21 18:46:08,426 - VideoDownloader - INFO - HCNetSDK检查通过
+2025-12-21 18:46:08,426 - VideoDownloader - INFO - 初始化下载管理器
+2025-12-21 18:46:09,098 - VideoDownloader - INFO - 初始化文件监控器
+2025-12-21 18:46:09,099 - VideoDownloader - INFO - 初始化界面
+2025-12-21 18:46:09,109 - VideoDownloader - INFO - 启动文件监控
+2025-12-21 18:46:09,507 - VideoDownloader - INFO - 进入应用主循环

@@ -1,0 +1,6 @@
+/record
+/logs
+completed_files.json
+*.mp4
+*.exe
+dist/main.exe

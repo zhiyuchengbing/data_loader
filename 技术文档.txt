@@ -1,0 +1,291 @@
+一、项目整体概述
+
+1. 项目背景
+本项目是一个基于海康威视 HCNetSDK 的「视频下载管理工具」，用于从前端监控 / NVR 设备中，按时间段自动批量下载多通道视频，并通过桌面图形界面（GUI）进行可视化管理。  
+系统通过「监听触发文件 → 生成下载任务 → 调度多通道下载 → 记录与管理本地文件」的流程，实现了无人值守的自动化视频归档能力。
+
+2. 核心目标
+- 通过监控指定目录中新产生的 *.txt 文件，自动触发相应的视频下载任务；
+- 按规则从触发文件推导出需要下载的时间段，并对多个通道（目前固定为 33、34、35、36）进行批量下载；
+- 将下载结果按任务名分目录管理，支持在图形界面中查看队列、进度与历史记录；
+- 提供对已下载任务的批量删除与「防重复下载」机制。
+
+3. 整体架构
+系统采用「前端 GUI + 后台调度 + 设备 SDK + 文件监控」的分层架构：
+- GUI 层：使用 PySide6（Qt 封装）实现 `main.py` 中的主窗口与交互；
+- 业务调度层：`DownloadManager` 负责下载任务队列、状态机与线程调度；
+- 设备访问层：`VideoDownloader` 基于 HCNetSDK 与海康设备通信并执行录像下载；
+- 文件监控层：`FileMonitor` 使用 watchdog 监控触发目录，并转化为下载任务；
+- 持久化与日志层：`completed_files.json`、`data/dropdata.csv`、`logs/app.log` 记录运行状态与历史操作。
+
+4. 运行形态
+- 开发调试：直接运行 `python main.py` 启动 GUI 程序；
+- 部署运行：通过 PyInstaller 打包生成 `dist/main.exe`，在 Windows 环境下双击运行。
+
+
+二、技术栈与关键依赖
+
+1. 编程语言与运行环境
+- Python 3.x（建议 3.8 及以上）；
+- Windows 操作系统（HCNetSDK 官方仅支持 Windows）；
+- 使用 venv/conda 等虚拟环境管理依赖推荐。
+
+2. 第三方库
+- PySide6
+  - 用途：构建桌面 GUI 界面；
+  - 主要使用的组件：`QMainWindow`、`QWidget`、`QVBoxLayout`、`QHBoxLayout`、`QGroupBox`、`QPushButton`、`QLabel`、`QProgressBar`、`QTableWidget`、`QTableWidgetItem`、`QCheckBox`、`QHeaderView` 等；
+  - 使用 `Signal`/`Slot` 机制进行前后台通信（任务进度、队列更新等）。
+
+- watchdog
+  - 用途：监控文件系统变化；
+  - 通过 `Observer` + `FileSystemEventHandler` 监听指定目录中新建的 `.txt` 文件；
+  - 将文件事件转化为业务层的「新任务」信号。
+
+- HCNetSDK（海康威视官方 SDK）
+  - 以动态链接库形式存在于 `HCNetSDK` 目录（例如 `HCNetSDK.dll` 等依赖 DLL）；
+  - 通过 Python `ctypes` 加载 DLL（`windll.LoadLibrary`），调用 C 接口实现设备登录与录像下载；
+  - 使用的核心接口包括：`NET_DVR_Init`、`NET_DVR_Login_V30`、`NET_DVR_GetFileByTime`、`NET_DVR_PlayBackControl`、`NET_DVR_GetDownloadPos`、`NET_DVR_StopGetFile`、`NET_DVR_Cleanup` 等。
+
+- watchdog 之外的标准库
+  - `os` / `shutil`：路径拼接、目录与文件操作（创建、删除等）；
+  - `time` / `datetime` / `timedelta`：定时等待、录像时间段计算、文件创建时间处理；
+  - `json`、`csv`：下载记录、删除记录的持久化；
+  - `logging`：统一日志输出到 `logs/app.log` 和控制台；
+  - `threading` / `QThread`：多线程调度下载任务而不阻塞 GUI。
+
+3. 打包相关
+- 项目中存在 `main.spec` 与 `dist/main.exe`，说明使用 PyInstaller 进行打包：
+  - `pyinstaller main.spec` 或类似命令生成可执行文件；
+  - 打包时会将 Python 解释器、依赖库及资源（如 `HCNetSDK`、`data`、`logs` 等）一并打入或复制到 `dist` 目录；
+  - 部署时只需拷贝 `dist` 目录到目标 Windows 机器并确保设备网络可达。
+
+
+三、模块划分与职责说明
+
+1. `main.py` — 程序入口与 GUI 主窗口
+- 主要职责：
+  - 初始化日志系统（`setup_logging`），统一写入 `logs/app.log`；
+  - 启动前检查 `HCNetSDK` 目录与 `HCNetSDK.dll` 是否存在（`check_hcnetsdk`）；
+  - 创建并持有 `DownloadManager` 与 `FileMonitor` 实例；
+  - 构建主界面布局，展示当前下载状态、待下载队列、已下载列表及控制按钮；
+  - 将 GUI 操作（按钮点击等）映射到业务层方法（开始 / 暂停 / 停止下载、批量删除等）；
+  - 响应下载管理器信号，实时更新界面显示。
+
+- 重要设计点：
+  - 使用 Qt 信号槽连接后台业务：
+    - `progress_updated` → 更新当前文件名、当前通道、进度条；
+    - `queue_updated` → 刷新待下载队列表格；
+    - `completed_updated` → 刷新已下载列表；
+    - `download_completed` / `download_failed` → 后续可扩展弹窗或提示；
+  - 界面中的「批量删除」配合下载管理器的 `delete_video_files` 方法，实现同时删除磁盘文件与记录；
+  - 重写 `closeEvent`，在窗口关闭时优雅停止下载线程与文件监控线程。
+
+2. `download_manager.py` — 下载任务管理与调度
+- 主要职责：
+  - 维护下载任务队列 `queue`、当前任务 `current_task`；
+  - 维护已完成任务列表 `completed_files`；
+  - 从 `data/dropdata.csv` 中加载「已删除任务」列表 `deleted_files`，并在新任务添加时进行过滤，防止重复下载；
+  - 控制下载线程 `DownloadThread` 的生命周期（开始 / 暂停 / 停止）；
+  - 扫描本地 `record` 目录，识别历史已有视频文件夹并补充到 `completed_files` 中，保证记录与磁盘一致；
+  - 提供批量删除接口 `delete_video_files`，同时更新 JSON 与 CSV 记录。
+
+- 任务模型：
+  - `task = { 'filename', 'channels', 'start_time', 'end_time', 'status', 'current_channel', 'progress' }`
+  - 目前通道列表固定为 `[33, 34, 35, 36]`；
+  - `status` 状态包括：`pending`、`downloading` 等；
+  - 任务以先进先出（FIFO）顺序由后台线程执行。
+
+- 持久化策略：
+  - `completed_files.json`
+    - 记录已完成任务的基础信息：文件名、通道列表、完成时间；
+    - 启动时加载，停止时保存；
+  - `data/dropdata.csv`
+    - 采用 CSV 行追加方式记录被删除的任务名、删除时间、操作类型；
+    - 启动时加载到内存 `deleted_files`，在添加任务和扫描历史时都进行过滤；
+    - 一旦某任务名被标记为删除，则后续检测到同名触发文件或同名文件夹时都会被跳过。
+
+- 下载线程 `DownloadThread`
+  - 使用 `QThread`，避免阻塞 GUI 主线程；
+  - 主循环逻辑：
+    1. 若处于暂停状态则 sleep 并继续循环；
+    2. 若当前无任务则尝试从队列 `queue` 中取下一个任务；
+    3. 按通道遍历（33、34、35、36），依次调用 `VideoDownloader.download_video` 下载；
+    4. 每次下载前通过 `progress_updated` 信号重置进度为 0，下载成功后设为 100；
+    5. 下载成功后调用 `mark_channel_completed` 更新任务进度；
+    6. 任务所有通道完成后，加入 `completed_files` 并触发 `completed_updated` 信号。
+
+3. `video_downloader.py` — 与海康设备的底层交互
+- 主要职责：
+  - 加载 `HCNetSDK.dll` 并完成 SDK 初始化（`NET_DVR_Init`）；
+  - 使用 `NET_DVR_Login_V30` 登录到指定设备；
+  - 将 Python 的 `datetime` 时间结构转为 SDK 要求的 `NET_DVR_TIME` 结构体；
+  - 通过 `NET_DVR_GetFileByTime` 按通道与时间段请求录像文件，并保存到本地；
+  - 轮询 `NET_DVR_GetDownloadPos` 获取进度，直至下载成功或失败；
+  - 析构函数中释放设备登录和 SDK 资源。
+
+- 文件保存策略：
+  - 基础保存目录 `base_save_path` 默认是 `"record"`；
+  - 每个任务创建一个专属子目录：`record/<filename>/`；
+  - 单个通道的文件名格式为：
+    - `<channel>_<YYYYMMDD>_<HHMMSS>_<HHMMSS>.mp4`
+  - 若检测到目标文件已经存在，则直接跳过下载，避免重复覆盖。
+
+4. `file_monitor.py` — 触发文件监控与任务生成
+- 主要职责：
+  - 默认监控路径 `F:\baowen`（可根据实际需求修改）；
+  - 通过 watchdog 的 `Observer` + 自定义 `FileEventHandler` 实时监控新建的 `.txt` 文件；
+  - 对启动时已存在的 `.txt` 文件进行一次性扫描处理，避免漏掉历史任务；
+  - 将触发文件转换为标准化的任务信息，并通过 `new_file_detected` 信号发送给 `DownloadManager`。
+
+- 时间段计算逻辑：
+  - 读取触发文件的创建时间 `creation_time`；
+  - 将 `creation_time` 往前平移 6 分钟得到真正的 `start_time`；
+  - 结束时间 `end_time = start_time + 6 分钟`；
+  - 换言之，系统对每个触发文件默认下载「距当前创建时间早 6 分钟的那一段、连续 6 分钟的视频」；
+  - 任务名 `filename` 为去掉扩展名后的文件名，便于与本地目录对应。
+
+
+四、核心业务流程设计
+
+1. 程序启动流程
+1) 执行 `python main.py` 或运行 `dist/main.exe`：
+   - 初始化日志记录路径 `logs/app.log`；
+   - 创建相对路径下的 `logs` 目录；
+   - 按硬编码路径创建 `E:\积水识别项目\视频下载模块\record` 目录（可根据需要调整）；
+   - 检查 `HCNetSDK` 目录与 `HCNetSDK.dll` 是否存在，若缺失则弹出错误并退出；
+
+2) 实例化 `MainWindow`：
+   - 创建 `DownloadManager` 与 `FileMonitor`；
+   - 连接好各类信号槽；
+   - 启动 `FileMonitor` 线程；
+   - 刷新界面中的已完成列表。
+
+2. 任务触发与队列管理流程
+1) `FileMonitor` 启动后：
+   - 使用 `Observer` 监听 `F:\baowen` 目录；
+   - 对已存在的 `.txt` 文件执行一次 `process_existing_files`；
+
+2) 当发现新的或已有的 `.txt` 文件时：
+   - 取其创建时间作为 `creation_time`，计算开始时间和结束时间；
+   - 构造 `file_info = { 'filename', 'start_time', 'end_time' }`；
+   - 通过 `new_file_detected` 信号发送给主线程中的 `MainWindow`；
+   - `MainWindow.on_new_file` 再调用 `DownloadManager.add_task`。
+
+3) `DownloadManager.add_task`：
+   - 调用 `_is_downloaded` 判断是否已经完成或已经删除：
+     - 若在 `deleted_files` 中，则直接跳过；
+     - 若在 `completed_files` 或磁盘 `record/<filename>` 目录均存在，则视为已完成并跳过；
+   - 若可下载，则构造任务对象加入 `queue`，并触发 `queue_updated` 信号刷新界面。
+
+3. 下载执行流程
+1) 用户点击「开始」按钮：
+   - 调用 `DownloadManager.start`，创建并启动 `DownloadThread`；
+   - 按钮状态联动：开始禁用，暂停/停止启用。
+
+2) `DownloadThread.run` 主循环：
+   - 若被标记为暂停，则 sleep 等待；
+   - 若当前任务为空，则从队列取下一个任务；
+   - 遍历任务的通道列表，对每个通道依次调用 `VideoDownloader.download_video`；
+   - 面向 GUI 发送进度更新信号与完成/失败信号。
+
+3) 视频下载细节（单通道）：
+   - 将 Python 时间转为 `NET_DVR_TIME` 结构；
+   - 调用 `NET_DVR_GetFileByTime` 获取下载句柄；
+   - 使用 `NET_DVR_PlayBackControl` 启动下载；
+   - 循环调用 `NET_DVR_GetDownloadPos` 获取下载进度，直到 100 或出错；
+   - 调用 `NET_DVR_StopGetFile` 关闭下载；
+   - 根据返回结果决定是否调用 `mark_channel_completed` 和 `download_completed` 信号。
+
+4) 任务完成与记录更新：
+   - 当任务的所有通道均从 `channels` 列表中移除后：
+     - 构建一条 `completed_files` 记录；
+     - 写入 `completed_files.json`；
+     - 向 GUI 发送 `completed_updated` 信号，刷新「已下载列表」表格。
+
+4. 删除任务与防重复下载流程
+1) 用户在 GUI 中勾选若干已完成任务，点击「删除选中」：
+   - 弹出确认对话框提示「删除后不可恢复」；
+   - 若确认，则调用 `DownloadManager.delete_video_files(filenames)`。
+
+2) `delete_video_files` 的行为：
+   - 逐个构造 `record/<filename>` 目录并使用 `shutil.rmtree` 删除整个文件夹；
+   - 将这些任务从 `completed_files` 列表中移除；
+   - 将任务名通过 `save_deleted_file_to_csv` 追加写入 `data/dropdata.csv`；
+   - 最后触发 `completed_updated` 信号刷新 GUI。
+
+3) 防重复策略：
+   - 在 `add_task` 和 `scan_existing_videos` 中，都会首先判断任务名是否存在于 `deleted_files`；
+   - 对于已删除过的任务，即使磁盘中仍存在残留文件夹或再次出现同名触发文件，系统也会选择跳过；
+   - 如需重新允许下载，需要手动编辑或清空 `data/dropdata.csv` 记录。
+
+
+五、设计思路与关键考虑
+
+1. 解耦与分层
+- 将「界面展示」、「任务调度」、「设备访问」、「文件监控」、「数据持久化」分为独立模块：
+  - 便于后续独立维护和扩展（例如替换成不同厂商的 SDK、不同的触发机制、或切换成 Web 界面等）；
+  - 在故障排查时可以快速定位问题层级（GUI、SDK、监控、存储等）。
+
+2. 线程模型设计
+- GUI 主线程只负责界面渲染和简单响应，耗时操作一律放入后台线程：
+  - 下载由 `QThread`（`DownloadThread`）异步执行；
+  - 文件监控由 `FileMonitor` 继承自 `QThread` 单独运行；
+  - 线程间靠 Qt 信号槽传递消息，减少直接共享数据带来的锁竞争问题。
+
+3. 状态记录与断点恢复
+- 通过 `completed_files.json` 将「已完成任务」持久化到磁盘；
+- 下次启动时：
+  - 从 JSON 中恢复已完成列表；
+  - 再扫描 `record` 目录，识别那些尚未写入 JSON 的历史文件夹补充记录；
+  - 结合 `data/dropdata.csv` 的删除记录，尽可能保证「界面显示」与「磁盘实际状态」保持一致。
+
+4. 防重复下载与误操作保护
+- 通过「已完成记录」+「已删除记录」双重过滤新任务，避免：
+  - 相同任务被重复触发下载；
+  - 用户误删后又自动重新下载导致磁盘空间浪费。
+- 批量删除前增加弹窗确认，并在日志中记录异常情况，便于排查误删问题。
+
+5. 与 HCNetSDK 的交互封装
+- 使用 `ctypes` 对 SDK 接口进行最小封装，使上层只需要关心：
+  - 通道号；
+  - 起止时间；
+  - 保存目录 / 文件名；
+- 内部处理细节包括：
+  - SDK 初始化 / 登录 / 清理；
+  - C 结构体定义（如 `NET_DVR_TIME`, `NET_DVR_DEVICEINFO_V30`）；
+  - 错误码获取与打印；
+  - 进度轮询与结束判断。
+
+
+六、部署与运维建议
+
+1. 环境准备
+- Windows 10 或以上版本；
+- 安装对应位数（32/64 位）与 Python 匹配的 HCNetSDK 版本；
+- 网络环境需保证运行主机与海康设备之间连通；
+- 建议为 `logs`、`record`、`data` 分配充足磁盘空间。
+
+2. 运行与监控
+- 通过日志文件 `logs/app.log` 监控：
+  - SDK 初始化与登录是否成功；
+  - 下载任务执行情况、异常信息；
+  - 文件监控线程是否正常工作。
+
+3. 常见问题处理思路
+- 启动时报 HCNetSDK 缺失：
+  - 检查项目根目录是否存在 `HCNetSDK` 文件夹；
+  - 检查其中是否包含 `HCNetSDK.dll` 及相关依赖 DLL；
+- 下载进度一直为 -1 或 0 不动：
+  - 检查设备时间是否与服务器时间相差过大；
+  - 检查对应时间段是否确实有录像；
+  - 检查设备带宽和网络延迟；
+- 无法触发下载：
+  - 检查监控路径是否与实际生成 `.txt` 文件路径一致；
+  - 检查文件扩展名是否为 `.txt`，以及是否有权限访问目录；
+  - 确认 `data/dropdata.csv` 中是否已经把该任务名标记为删除。
+
+
+
+以上为本项目的技术文档，涵盖了整体架构、技术栈、模块划分、核心流程、关键设计思路以及后续扩展方向，便于后续维护和二次开发参考。
+
+
